@@ -1,7 +1,51 @@
+let close = document.getElementsByClassName("close");
+let i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    let div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+let list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  let li = document.createElement("li");
+  let inputValue = document.getElementById("yourInput").value;
+  let toDo = document.createTextNode(inputValue);
+  li.appendChild(toDo);
+  if (inputValue === '') {
+    alert("You forgot to add a new task!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("yourInput").value = "";
+
+  let span = document.createElement("SPAN");
+  let txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      let div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+// Denna uppgift va väldigt utmanande försökte på många olika sätt 
+
 //Hade svårt med createElement input och sen hämta värdet
-//Ordningen på elementen va också svår att lösa. Har inte haft tillräkligt med tid att öva.  
+//Ordningen på elementen va också svår att lösa om man skapade nån html och sedan resten med javascript. Har inte haft tillräkligt med tid att öva.  
 //En undefined kommer upp i listan som jag tror har att göra med local storage, men kan inte lösa det 
-const button = document.createElement('button')
+/*const button = document.createElement('button')
         button.innerText = 'Add';
         
         button.addEventListener('click', () => {
@@ -22,7 +66,7 @@ function toDoMain(){
     function getElements(){
         inputElm = document.getElementsByTagName("input")[0];
         ulElem = document.getElementsByTagName("ul")[0];
-        let liElem = document.createElement("li");
+        
         inputElm.addEventListener("change", onChange, false);
     }
 
@@ -90,47 +134,5 @@ function toDoMain(){
         liElem.appendChild(iconElem);
         ulElem.appendChild(liElem);
     }
-}
-
-//Kan inte få till denna
-/*
-const heading = document.createElement("h1");
-heading.className = "heading";
-heading.innerHTML = "To Do List";
-document.body.append(heading);
-
-const inputElm = document.createElement("input");
-inputElm.setAttribute("type", "text");
-document.body.append(inputElm);
-
-const buttonElem = document.createElement("button");
-buttonElem.innerHTML = "Add";
-document.body.append(buttonElem);
-
-inputElm.addEventListener('change', onChange);
-
-function onChange(event){
-
-    const inputValue = inputElm.value;
-
-    const container = document.createElement("div");
-    container.className = "box";
-    document.body.append(container);
-
-    const ulElem = document.createElement("ul");
-    container.appendChild(ulElem);
-
-    const liElem = document.createElement("li")
-
-    let saveText = documnet.createElement("span");
-    saveText.innerText = inputElm;
-    liElem.appendChild(saveText);
-
-    console.log(inputValue);
-    inputElm.value = "";
-
-    ulElem.appendChild(liElem);
-
-   
 }
 */
