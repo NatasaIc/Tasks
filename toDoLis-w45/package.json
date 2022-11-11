@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.10.9"
+  }
+}
