@@ -1,0 +1,41 @@
+@use "variable" as v;
+
+.heading-primary {
+  color: #eee;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  &--main {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  &--sub2 {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+.fa-circle-arrow-down {
+  display: block;
+  padding: 3rem;
+  font-size: 1.5rem;
+  color: v.$link-color;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}

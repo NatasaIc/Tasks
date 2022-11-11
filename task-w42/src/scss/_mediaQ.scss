@@ -1,0 +1,110 @@
+//Tablet Portrait
+@media screen and (min-width: 786px) {
+  .header {
+    li {
+      float: right;
+      padding: 1rem;
+    }
+    a {
+      font-weight: 600;
+    }
+  }
+  .menu {
+    width: 100%;
+    clear: none;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .heading-primary--main {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+  .heading-primary--sub {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .heading-primary--sub2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  img {
+    margin: 2rem;
+  }
+
+  .grid--info {
+    margin: 2rem;
+  }
+
+  .footer__info {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul {
+      font-size: 1rem;
+    }
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1024px) {
+  .header {
+    li {
+      float: right;
+    }
+  }
+  a {
+    padding: 20px 30px;
+    font-weight: 600;
+  }
+  .menu {
+    width: 100%;
+    clear: none;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .heading-primary--main {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .heading-primary--sub {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .heading-primary--sub2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .fa-circle-arrow-down {
+    padding-top: 6rem;
+  }
+
+  img {
+    margin: 0 5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__info {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul {
+      margin: 3rem;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use "variable" as v;
+@use "mixin";
+@use "reset";
+
+.grid--heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  color: #000;
+  font-size: 2rem;
+}
+.grid {
+  padding: 3rem;
+  color: #000;
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 10px;
+
+  .grid--name {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 0 0;
+    color: #2c3333;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .grid-figure {
+    justify-content: center;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+  }
+  .grid--info {
+    width: 300px;
+    border: 2px solid #d3d3d3;
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  .fa-quote-right {
+    font-size: 2rem;
+  }
+}
+
+.footer-container {
+  padding: 3rem;
+  width: 100%;
+  background-color: #000;
+  color: v.$nav-color;
+  font-size: 1rem;
+  &__info {
+    padding: 2rem;
+    line-height: 2rem;
+  }
+}
+ul {
+  list-style: none;
+  padding: 20px;
+  i {
+    padding: 10px 10px 10px 10px;
+  }
+}
+.fa-brands {
+  font-size: 20px;
+  cursor: pointer;
+}
