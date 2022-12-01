@@ -50,3 +50,28 @@ body {
   background-color: transparent;
   outline: none;
 }
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: #000;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+span {
+  cursor: pointer;
+  margin-right: 0.8rem;
+  color: red;
+}
+
+p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: rgb(52, 52, 52);
+}
