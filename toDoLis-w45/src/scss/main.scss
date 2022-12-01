@@ -11,3 +11,42 @@ body {
   color: #fff;
   height: 100vh;
 }
+
+.container {
+  width: 30rem;
+  margin: 2rem auto;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__form {
+    background-color: #fff;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__btn {
+    padding: 0.7rem;
+    background-color: burlywood;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+#input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
