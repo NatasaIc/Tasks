@@ -15,7 +15,7 @@ class Storage {
   static getStorage (){
     let storage = localStorage.getItem("todo") === null ? 
     [] : JSON.parse(localStorage.getItem("todo"));
-    return ;
+    return storage;
   }
 }
 
