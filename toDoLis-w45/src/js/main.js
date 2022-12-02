@@ -71,3 +71,38 @@ function getFromLocalStorage() {
     renderTodos(todos);
   }
 }
+
+// toggle the value 
+function toggle(id) {
+  todos.forEach(function(item) {
+   
+    if (item.id == id) {
+      // toggle the value
+      item.completed = !item.completed;
+    }
+  });
+
+  addToLocalStorage(todos);
+}
+
+function deleteTodo(id) {
+  todos = todos.filter(function(item) {
+    return item.id != id;
+  });
+
+  // update the localStorage
+  addToLocalStorage(todos);
+}
+
+getFromLocalStorage();
+
+// listen for click event in all delete-button and checkbox
+todoItemsList.addEventListener('click', function(event) {
+  if (event.target.type === 'checkbox') {
+    toggle(event.target.parentElement.getAttribute('data-key'));
+  }
+
+  if (event.target.classList.contains('delete-button')) {
+    deleteTodo(event.target.parentElement.getAttribute('data-key'));
+  }
+});
