@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(./books-gd8a7ebbc6_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+}
