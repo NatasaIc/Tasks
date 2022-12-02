@@ -56,10 +56,11 @@ h1 {
   border-radius: 2px;
   padding: 10px;
   font-size: 1rem;
-  &:hover {
-    cursor: pointer;
-    background-color: cornflowerblue;
-  }
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
 }
 
 .todo-items {
@@ -99,4 +100,5 @@ h1 {
 
 .checked {
   text-decoration: line-through;
+  opacity: 50%;
 }
