@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(./books-gd8a7ebbc6_1920.jpg);
+  background-image: url(/images/books-gd8a7ebbc6_1920.jpg);
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
@@ -19,4 +19,84 @@ ul {
 }
 
 .container {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-input {
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.add-button {
+  background-color: burlywood;
+  color: #000;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 1rem;
+  &:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+  }
+}
+
+.todo-items {
+  min-width: 370px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  &:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  float: right;
+  color: crimson;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.checked {
+  text-decoration: line-through;
 }
